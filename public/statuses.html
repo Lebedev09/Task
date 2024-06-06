@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lead Statuses</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Form</a>
+        <a href="statuses.html">Statuses</a>
+    </nav>
+    <h1>Lead Statuses</h1>
+    <form id="filterForm">
+        <label for="dateFrom">Date From:</label>
+        <input type="datetime-local" id="dateFrom" name="dateFrom" required>
+        <label for="dateTo">Date To:</label>
+        <input type="datetime-local" id="dateTo" name="dateTo" required>
+        <button type="submit">Filter</button>
+    </form>
+    <table id="statusesTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th>FTD</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="../scripts/statuses.js"></script>
+</body>
+</html>
